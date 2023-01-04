@@ -1,6 +1,8 @@
 name: Publish New Library Release to PyPi
 
-on: [release]
+on:
+  release:
+    types: [released]
 
 jobs:
   publish:
