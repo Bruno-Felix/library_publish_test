@@ -3,13 +3,12 @@ name: Publish New Library Release to PyPi
 on: [release]
 
 jobs:
-  test:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
-      - name: Publish Library to PyPi
-        uses: coveooss/pypi-publish-with-poetry@v1.0.0
+      - name: Build and publish to pypi
+        uses: JRubics/poetry-publish@v1.15
         with:
-          project-name: akira
-          pypi-token: ${{ secrets.PYPI_TOKEN }}
+          pypi_token: ${{ secrets.PYPI_TOKEN }}
