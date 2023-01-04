@@ -8,8 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-    - name: Publish Library to PyPi
-      uses: coveooss/pypi-publish-with-poetry@v1.0.0
-      with:
-        project-name: akira
-        pypi-token: ${{ secrets.PYPI_TOKEN }}
+      - name: Publish Library to PyPi
+        uses: coveooss/pypi-publish-with-poetry@v1.0.0
+        with:
+          project-name: akira
+          pypi-token: ${{ secrets.PYPI_TOKEN }}
