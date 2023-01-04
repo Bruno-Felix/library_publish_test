@@ -1,11 +1,9 @@
 name: Publish New Library Release to PyPi
 
-on:
-  release:
-    types: [released]
+on: [release]
 
 jobs:
-  release:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
