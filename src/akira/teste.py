@@ -1,2 +1,3 @@
-def return_ola_mundo_string():
-    return 'Olá mundo release'
+from yamls.aux import mensagem
+
+print('Olá mundo release: ' + mensagem)
