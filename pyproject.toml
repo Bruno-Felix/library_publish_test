@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "akira"
-version = "0.1.3"
+version = "0.1.4"
 description = "A short description of the package."
 license = "MIT"
 authors = [
